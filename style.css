@@ -1,0 +1,32 @@
+#score {
+    text-align: center;
+}
+
+#game {
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    margin: auto;
+    background-image: url("background.png");
+    /* background-image: url("https://thumbs.dreamstime.com/b/bit-pixel-art-game-background-dino-egg-prehistoric-retro-arcade-d-videogame-vector-landscape-mountains-rocky-hills-trees-blue-421174116.jpg"); */
+    background-size: cover;
+    background-position: center;
+}
+
+#dino {
+    height: 75px;
+    width: 75px;
+    position: relative;
+    top: 195px;
+    background-image: url("dino.png");
+    background-size: cover;
+}
+
+#dino {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 145px;
+    background-image: url("dino.png");
+    background-size: cover;
+}
