@@ -19,14 +19,21 @@
     position: relative;
     top: 195px;
     background-image: url("dino.png");
-    background-size: cover;
+    background-size: cover; 
 }
 
-#dino {
+#cactus {
     height: 50px;
     width: 50px;
     position: relative;
-    top: 145px;
-    background-image: url("dino.png");
+    top: 140px;
+    left : 550px;
+    background-image: url("cactus.png");
     background-size: cover;
+    animation: cactus 1.33s infinite;
+}
+
+@keyframes cactus { 
+    0%{left: 550px;}
+    100%{left: -50px;}
 }
