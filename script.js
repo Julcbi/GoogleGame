@@ -2,6 +2,10 @@ const dino = document.getElementById('dino');
 const cactus = document.getElementById('cactus');
 const score = document.getElementById('score');
 
+const HIT_RIGHT = 40;
+const HIT_TOP = 175;
+const HIT_LEFT = 5;
+
 function jump() {
     dino.classList.add('jump-animation');
 
@@ -23,7 +27,7 @@ document.addEventListener('keypress', () => {
 // cactus disapear if go out of the screen
 setInterval(() => {
     score.innerText++;
-    const speed = Math.max(0.8, 3 - parseInt(score.innerText) * 0.005); // increase speed 
+    const speed = Math.max(0.8, 3 - parseInt(score.innerText) * 0.002); // increase speed 
     cactus.style.animationDuration = speed + 's';
     const dinoTop = parseInt(window.getComputedStyle(dino)
         .getPropertyValue('top'));
@@ -36,7 +40,7 @@ setInterval(() => {
     //     cactus.style.display = '';
     // }
 
-    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop > 150) {
+    if (cactusLeft < HIT_RIGHT && cactusLeft > HIT_LEFT && dinoTop > HIT_TOP) {
         alert("You got score of: " + score.innerText + "\nPlay again?");
         location.reload();
     }
