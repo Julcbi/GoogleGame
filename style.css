@@ -18,7 +18,7 @@
 }
 
 @keyframes bg-scroll {
-    from { bacground-position: 0 0; }
+    from { background-position: 0 0; }
     to   { background-position: -600px 0; }
 }
 
@@ -39,7 +39,7 @@
     left : 550px;
     background-image: url("cactus.png");
     background-size: cover;
-    animation: cactus 4s infinite;
+    animation: cactus 3s linear infinite;
 }
 
 @keyframes cactus { 
@@ -56,9 +56,10 @@
  /* 30%    {top:  150px;} */
     50%    {top:  100px;}
     55%    {top:  100px;}
-    60%    {top:  140px;}
-    70%    {top:  160px;}
-    80%    {top:  180px;}
-    90%    {top:  200px;}
+    60%    {top:  100px;}
+    70%    {top:  140px;}
+    80%    {top:  160px;}
+    90%    {top:  180px;}
+    95%    {top:  200px;}
     100%   {top:  210px;}
 }

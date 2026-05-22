@@ -27,8 +27,12 @@ document.addEventListener('keypress', () => {
 // cactus disapear if go out of the screen
 setInterval(() => {
     score.innerText++;
-    const speed = Math.max(0.8, 3 - parseInt(score.innerText) * 0.002); // increase speed 
-    cactus.style.animationDuration = speed + 's';
+    const worldSpeed = Math.max( 4.5, 6 - parseInt(score.innerText) * 0.0008 );
+    const cactusSpeed = Math.max( 3.8, 6 - worldSpeed - 0.8 );
+
+    document.getElementById('game').style.animationDuration = worldSpeed + 's';
+    cactus.style.animationDuration = cactusSpeed + 's';
+
     const dinoTop = parseInt(window.getComputedStyle(dino)
         .getPropertyValue('top'));
     const cactusLeft = parseInt(window.getComputedStyle(cactus)
