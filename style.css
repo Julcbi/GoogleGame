@@ -9,9 +9,17 @@
     margin: auto;
     background-image: url("background.png");
     /* background-image: url("https://thumbs.dreamstime.com/b/bit-pixel-art-game-background-dino-egg-prehistoric-retro-arcade-d-videogame-vector-landscape-mountains-rocky-hills-trees-blue-421174116.jpg"); */
-    background-size: cover;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    background-position: 0 0;
     overflow: hidden;
+    animation: bg-scroll 6s linear infinite;
     /* background-position: center; */
+}
+
+@keyframes bg-scroll {
+    from { bacground-position: 0 0; }
+    to   { background-position: -600px 0; }
 }
 
 #dino {

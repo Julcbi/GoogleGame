@@ -2,7 +2,7 @@ const dino = document.getElementById('dino');
 const cactus = document.getElementById('cactus');
 const score = document.getElementById('score');
 
-const HIT_RIGHT = 40;
+const HIT_RIGHT = 30;
 const HIT_TOP = 175;
 const HIT_LEFT = 5;
 
